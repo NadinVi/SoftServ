@@ -6,6 +6,7 @@
 // const arr2 = compact(arr);
 // console.log(arr2) ; // [5,3,4,6,7]
 
+
 // Рішення 
 // const arr = [5, 3, 4, 5, 6, 7, 3];
 
@@ -14,6 +15,7 @@
 //     return newArr;
 // }
 // console.log(compact(arr));
+
 
 // Рішення
 // function compact(arr) {
@@ -34,6 +36,7 @@
 // а на виході отримує масив із діапазоном цих значень (реалізувати достатньо лише із числовими значеннями)
 // let arr = createArray(2, 9);
 // console.log(arr); // [2,3,4,5,6,7,8,9]
+
 
 // Рішення
 // let arr = [];
@@ -88,7 +91,7 @@
 //     for(let i = 0; i < arr.length; i++) {
 
 //     }
-// };
+// }
 
 
   
@@ -111,9 +114,10 @@
 //       break;
 //     default: a + b;
 //   }
-// };
+// }
 
 // console.log(calc(2, 5, 2));
+
 
 // Рішення
 // function calc(a, b, op) {
@@ -138,30 +142,19 @@
 // Якщо всі елементи масиву унікальні (не мають дублів), то функція поверне true, інакше - false.
 // findUnique([1, 2, 3, 5, 3]);  // => false
 // findUnique([1, 2, 3, 5, 11]); // => true
-//let arr = [1, 2, 3, 5, 11];
+// let arr = [1, 2, 2, 2, 3, 4, 5, 5];
+
+let arr = [1, 2, 2, 2, 3, 4, 5, 5];
+
+function findUnique(arr) {
+    const newArr = [];
+    if (arr.filter((item, index) => arr.indexOf(item) === index)) {
+     return newArr}
+     else {
+        return console.log('end')
+     }
+ }
+
+console.log(findUnique(arr));
 
 
-// Рішення
-// let arr = [1, 2, 3, 5, 3];
-
-// function findUnique(arr) {
-//     const newArr = new Set(arr);
-//     //console.log(newArr);
-//     return newArr.size === arr.length;
-// };
-
-// console.log(findUnique(arr));
-
-
-// Рішення
-// let arr = [1, 2, 3, 5, 11];
-// function findUnique(arr) {
-//     return arr.some(item => arr.indexOf(item) !== arr.lastIndexOf(item));  
-// }
- 
-// if (findUnique(arr)) {
-//     console.log(false);
-// }
-// else {
-//     console.log(true);
-// };
