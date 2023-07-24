@@ -93,14 +93,21 @@
 // [”Limit”, “a”, “3”, “33”, “a”, “text”, “strong”, “broun”
 // ] 
 
-// let  arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
 
-// function funcName(arr) {
-//     for(let i = 0; i < arr.length; i++) {
+//В цій залачі поки дішла до розподілу по різним масивам String та Number. Але, поки не зрозуміла як це рішення додати до функціі 
+// та як вірно зайти у вкладени масив і звідти витягнути потрібні дані по масивам
+// let arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
+// const arrNum = [];
+// const arrStr = [];
 
-//     }
-// };
-
+//     for(let i = 0; i <= arr.length; i++) {
+//         if (typeof arr[i] === 'number') {
+//            console.log(arrNum.push(arr[i]));
+//         } else if (typeof arr[i] === 'string') {
+//             console.log(arrStr.push(arr[i]));
+//         }
+//     };
+//     console.log(arrNum);
 
   
   
