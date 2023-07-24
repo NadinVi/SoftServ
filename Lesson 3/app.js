@@ -52,6 +52,17 @@
 // Задані цілі числа a і b (a < b). Виведіть усі цілі числа від a до b включно, при цьому a виводится 1 раз, 
 // число а+1 - два рази і т.д.
 
+// Рішення
+// function outputNumber(a, b) {
+//     let count = 1;
+//     for ( let i = a; i <= b; i ++) {
+//         for(let k = 1; k <= count; k++) {
+//                 console.log(i);
+//         } count ++;
+//     }   
+// };
+
+// outputNumber(2, 6)
 
 
 // Задача 4
