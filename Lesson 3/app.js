@@ -107,9 +107,48 @@
 //             console.log(arrStr.push(arr[i]));
 //         }
 //     };
-//     console.log(arrNum);
+// День не знаю який, коли намагаюсь зробити задачу і от завдяки підказкам у чаті я прийшла до таких кроків 
+// let arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
+// let ownArr = arr.flat();
+// console.log(ownArr);
 
-  
+
+// Це я писала код без функції
+// let arrNum = [];
+// let arrStr = [];
+
+// for(let i = 0; i <= ownArr.length; i++) {
+//           if (typeof ownArr[i] === 'number') {
+//              (arrNum.push(ownArr[i]));
+//           } else if (typeof ownArr[i] === 'string') {
+//               (arrStr.push(ownArr[i]));
+//           }
+//       };
+//       console.log(arrNum);
+//       console.log(arrStr);
+
+// Рішення. ВибачЮ шо дуже анато пишу, але дуже хочу такі задачі покроково для себе занотувати. Сподіваюсь в мене вийшло.
+// А це вже код з функцією. 
+let arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
+let ownArr = arr.flat();
+console.log(ownArr);
+function funcName(ownArr) {
+  let arrNum = [];
+  let arrStr = [];
+
+  for(let i = 0; i <= ownArr.length; i++) {
+            if (typeof ownArr[i] === 'number') {
+              (arrNum.push(ownArr[i]));
+            } else if (typeof ownArr[i] === 'string') {
+              (arrStr.push(ownArr[i]));
+            }
+        }
+        return [arrNum, arrStr];
+}
+
+console.log(funcName(ownArr));
+
+
   
 // Задача 6
 // Напишіть функцію calc(a, b, op), яка виконує над числами a і b одну із арифметичних операцій та повертає її результат. 
