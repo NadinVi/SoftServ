@@ -127,26 +127,26 @@
 //       console.log(arrNum);
 //       console.log(arrStr);
 
-// Рішення. ВибачЮ шо дуже анато пишу, але дуже хочу такі задачі покроково для себе занотувати. Сподіваюсь в мене вийшло.
+// Рішення. Вибач, що дуже банато пишу, але дуже хочу такі задачі покроково для себе занотувати. Сподіваюсь в мене вийшло.
 // А це вже код з функцією. 
-let arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
-let ownArr = arr.flat();
-console.log(ownArr);
-function funcName(ownArr) {
-  let arrNum = [];
-  let arrStr = [];
+// let arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
+// let ownArr = arr.flat();
+// console.log(ownArr);
+// function funcName(ownArr) {
+//   let arrNum = [];
+//   let arrStr = [];
 
-  for(let i = 0; i <= ownArr.length; i++) {
-            if (typeof ownArr[i] === 'number') {
-              (arrNum.push(ownArr[i]));
-            } else if (typeof ownArr[i] === 'string') {
-              (arrStr.push(ownArr[i]));
-            }
-        }
-        return [arrNum, arrStr];
-}
+//   for(let i = 0; i <= ownArr.length; i++) {
+//             if (typeof ownArr[i] === 'number') {
+//               (arrNum.push(ownArr[i]));
+//             } else if (typeof ownArr[i] === 'string') {
+//               (arrStr.push(ownArr[i]));
+//             }
+//         }
+//         return [arrNum, arrStr];
+// }
 
-console.log(funcName(ownArr));
+// console.log(funcName(ownArr));
 
 
   
