@@ -148,7 +148,7 @@
 //             this.name = "MonthException";
 //         }
 //     };
-    
+
 //     function showMonthName(month) {
 //         const allMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 //         try{
@@ -159,12 +159,12 @@
 //         return console.log(error.name, error.message);
 //     }
 //     };
-    
+
 //     (showMonthName(14)); // Incorrect month number
 //     (showMonthName(4)); // April
 //     (showMonthName(0)); 
 //     (showMonthName(8)); 
-    
+
 
 
 // Задача 5.
@@ -178,3 +178,55 @@
 // showUsers([7, -12, 44, 22]);
 // Error: ID must not be negative: -12
 // [ {id: 7}, {id: 44}, {id: 22} ]
+
+// Рішення
+// function showUser(id) {
+//     let idObj = { id };
+//     if (id < 0) {
+//         throw new Error(`Error: ID must not be negative: ${id}`)
+//     }
+//     return idObj;
+// };
+
+// function showUsers(ids) {
+//     let idArr = [];
+//     for (const id of ids) {
+//         try {
+//             idArr.push(showUser(id));
+//         }
+//         catch (error) {
+//             console.log(`${error.name}! ${error.message}`)
+//         }
+//     }
+//     return idArr;
+// };
+
+// console.log(showUsers([7, -12, 44, 22]));
+
+
+// Рішення
+// function showUsers(ids) {
+//     function showUser(id) {
+//         let idObj = { id };
+//         if (id < 0) {
+//             throw new Error(`Error: ID must not be negative: ${id}`)
+//         }
+//         return idObj;
+//     };
+
+//     let idArr = [];
+//     for (const id of ids) {
+//         try {
+//             idArr.push(showUser(id));
+//         }
+//         catch (error) {
+//             console.log(`${error.name}! ${error.message}`)
+//         }
+//     }
+//     return idArr;
+// };
+
+// console.log(showUsers([7, -12, 44, 22]));
+// console.log(showUsers([-7, 12, 44, -22])); // Error! Error: ID must not be negative: -7
+//                                            // Error! Error: ID must not be negative: -22
+//                                            // [{id: 12}, {id 44}]
