@@ -142,26 +142,29 @@
 
 
 // Рішення
-class MonthException {
-    constructor(messege) {
-        this.messege = messege;
-        this.name = "MonthException";
-    }
-};
-
-function showMonthName(month) {
-    const allMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    try{
-    if(month < 1 || month > 12) {
-        throw new MonthException("Incorrect month number")
-    } return allMonths[month - 1];
-} catch (error) {
-    return console.error(error.message);
-}
-}
-
-console.log(showMonthName(4));
-console.log(showMonthName(14));
+//  class MonthException {
+//         constructor(message) {
+//             this.message = message;
+//             this.name = "MonthException";
+//         }
+//     };
+    
+//     function showMonthName(month) {
+//         const allMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//         try{
+//         if(month < 1 || month > 12) {
+//             throw new MonthException("Incorrect month number")
+//         } return  console.log(allMonths[month - 1]);
+//     } catch (error) {
+//         return console.log(error.name, error.message);
+//     }
+//     };
+    
+//     (showMonthName(14)); // Incorrect month number
+//     (showMonthName(4)); // April
+//     (showMonthName(0)); 
+//     (showMonthName(8)); 
+    
 
 
 // Задача 5.
