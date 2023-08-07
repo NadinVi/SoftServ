@@ -52,17 +52,17 @@
 // Задані цілі числа a і b (a < b). Виведіть усі цілі числа від a до b включно, при цьому a виводится 1 раз, 
 // число а+1 - два рази і т.д.
 
-// Рішення
-// function outputNumber(a, b) {
-//     let count = 1;
-//     for ( let i = a; i <= b; i ++) {
-//         for(let k = 1; k <= count; k++) {
-//                 console.log(i);
-//         } count ++;
-//     }   
-// };
+//Рішення
+function outputNumber(a, b) {
+    let count = 1;
+    for ( let i = a; i <= b; i ++) {
+        for(let k = 1; k <= count; k++) {
+                console.log(i);
+        } count ++;
+    }   
+};
 
-// outputNumber(2, 6)
+outputNumber(2, 6)
 
 
 // Задача 4
@@ -149,7 +149,7 @@
 // console.log(funcName(ownArr));
 
 
-  
+
 // Задача 6
 // Напишіть функцію calc(a, b, op), яка виконує над числами a і b одну із арифметичних операцій та повертає її результат. 
 // Вид операції визначається цілим числом op: 1 – віднімання, 2 – добуток, 3 – ділення, інші значення – додавання.
@@ -211,11 +211,11 @@
 
 
 // Рішення
-// let arr = [1, 2, 3, 5, 11];
+// let arr = [1, 2, 3, 5, 3];
 // function findUnique(arr) {
-//     return arr.some(item => arr.indexOf(item) !== arr.lastIndexOf(item));  
+//     return arr.some(item => arr.indexOf(item) !== arr.lastIndexOf(item));
 // }
- 
+
 // if (findUnique(arr)) {
 //     console.log(false);
 // }

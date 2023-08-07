@@ -14,7 +14,7 @@
 //     try {
 //         let summ = arr[first] + arr[second];
 //         // перевірка чи введено число
-//         if (typeof first !== "number" || typeof first !== "number") {
+//         if (typeof first !== "number" || typeof second !== "number") {
 //                 throw new Error("Enter the number!");
 //             };
 //         // перевірка аби введені числа не були більше за довдину масиву
@@ -112,7 +112,7 @@
 // function calcRectangleArea(width, height) {
 //     try {
 //         // перевірка чи було введено число 
-//         if (typeof width !== "number" || typeof height !== "number") {
+//         if (typeof width !== "number" || typeof height !== "number" ) {
 //             throw new Error("Enter the number!");
 //         }
 //         // перевірка чи не було введене від'ємне число
