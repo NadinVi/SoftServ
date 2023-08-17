@@ -2,8 +2,9 @@
 // як користувач позначив будь-які 3 чекбокси, всі чекбокси робить неактивними.
 
 $(document).ready(function () {
-  let count = 0;                                                    // створюємо лічильник кліків по чекбоксам
-  $("input[type='checkbox']").each(function () {                    // на кожет чекбокс додаэмо дію клік
+  let count = 0; 
+  debugger                                                   // створюємо лічильник кліків по чекбоксам
+  $("input[type='checkbox']").each(function () {                    // на кожен чекбокс додаємо дію клік
     $(this).on("click", function () {
       //console.log("click work");
       count++;
@@ -15,3 +16,4 @@ $(document).ready(function () {
     });
   });
 });
+
