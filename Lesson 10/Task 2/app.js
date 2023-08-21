@@ -6,13 +6,13 @@
 // імена та вікові масиви ara з 3 елементами в кожному.
 // Використовуючи присвоєння деструктуризації, збережіть у змінних age1, age2, age3, name1, name2, name3 усі значення з об’єкта даних.
 
-// Рішення
-// const data = {
-//     names: [ 'Sam', 'Tom', 'Ray', 'Bob' ], 
-//     ages: [ 20, 24, 22, 26 ] 
-// }
+Рішення
+const data = {
+    names: [ 'Sam', 'Tom', 'Ray', 'Bob' ], 
+    ages: [ 20, 24, 22, 26 ] 
+}
 
-// let { names: [name1, name2, name3], ages: [ age1, age2, age3 ] } = data;
+ let { names: [name1, name2, name3], ages: [ age1, age2, age3 ] } = data;
 
 // console.log(data);
 // console.log(name1);

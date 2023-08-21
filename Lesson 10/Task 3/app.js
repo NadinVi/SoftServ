@@ -7,7 +7,11 @@
 // Не використовуйте аргументи у вашій функції.
 
 function mul(...el) {
-
+const numbers = el.filter((value) => typeof value === "number");
+if(!numbers.length) return 0;
+return numbers.reduce(
+    (previosValue, currentValue) => previosValue * currentValue
+);
 }
 
 console.log(mul(10, "str", 2, 3, true));

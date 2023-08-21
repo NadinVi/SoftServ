@@ -13,7 +13,7 @@
 // імена.третій у змінній t зі значенням за замовчуванням "Ім'я №3".
 
 // Рішення
-// let { first: f = 'Name №1', second: s = 'Name №2', third: t = 'Name №3' } = names;
+let { first: f = 'Name №1', second: s = 'Name №2', third: t = 'Name №3' } = names;
 
 // console.log(names);
 // console.log(f);
