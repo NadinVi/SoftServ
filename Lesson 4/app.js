@@ -230,3 +230,4 @@
 // console.log(showUsers([-7, 12, 44, -22])); // Error! Error: ID must not be negative: -7
 //                                            // Error! Error: ID must not be negative: -22
 //                                            // [{id: 12}, {id 44}]
+;
